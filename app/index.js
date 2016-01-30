@@ -31,9 +31,6 @@ NodeExpressGenerator.prototype.askFor = function askFor() {
   // have Yeoman greet the user.
   console.log(this.yeoman);
 
-
-
-/*
   // section to prompt the user for a response. In this case to launch the prototype or not on completion.
   var prompts = [
     {
@@ -43,19 +40,19 @@ NodeExpressGenerator.prototype.askFor = function askFor() {
       default: true
     }
   ];
-*/
+
 
    /**
    * If you add a prompt above, make sure you add it below here as well
    * e.g this.newName = props.newName;
    */
  
-/*
+
 this.prompt(prompts, function (props) {
     this.RunOnComplete = props.RunOnComplete;
     cb();
   }.bind(this));
-*/
+
 
 };
 
