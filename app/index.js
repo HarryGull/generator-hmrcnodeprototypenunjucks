@@ -194,7 +194,7 @@ NodeExpressGenerator.prototype.assets = function assets() {
   this.copy('assets/sass/elements/_layout.scss', 'app/assets/sass/elements/_layout.scss');
   this.copy('assets/sass/elements/_lists.scss', 'app/assets/sass/elements/_lists.scss');
   this.copy('assets/sass/elements/_panels.scss', 'app/assets/sass/elements/_panels.scss');
-  this.copy('assets/sass/elements/_phase-banner', 'app/assets/sass/elements/_phase-banner');
+  this.copy('assets/sass/elements/_phase-banner.scss', 'app/assets/sass/elements/_phase-banner.scss');
   this.copy('assets/sass/elements/_reset.scss', 'app/assets/sass/elements/_reset.scss');
   this.copy('assets/sass/elements/_tables.scss', 'app/assets/sass/elements/_tables.scss');
 
