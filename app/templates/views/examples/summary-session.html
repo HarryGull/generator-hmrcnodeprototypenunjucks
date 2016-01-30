@@ -24,7 +24,6 @@
     </div><!-- /Back button -->
     <!-- Title -->
     <h2 class="form-title heading-large">Check your answers</h2>
-
     <div class="form-group">
       <table>
         <tbody>
@@ -61,17 +60,25 @@
                   {{ postcode }}
               </td>
               <!-- Change the change link depending on whether an company or individual -->
-              <td  style="vertical-align:top">
-                {{ "<a href="/examples/about-company-two-session">change</a>" if isCompany else "<a href="/examples/about-person-two-session">change</a> }}
-              </td>
+              <td  style="vertical-align:top">                  
+              <!-- Change the change link depending on whether an company or individual -->
+                {% if isIndividual %}
+                   <a href="/examples/about-person-two-session">change</a> 
+                {% else %}
+                      <a href="/examples/about-company-two-session">change</a>
+                {% endif %}
           </tr>
 
           <tr><a href="/examples/about-company-two-session">change</a>
               <td>Phone number</td>
               <td>{{ phone }}</td>
-              <td>
+             <td>
                 <!-- Change the change link depending on whether an company or individual -->
-                {{ "<a href="/examples/about-company-two-session">change</a>" if isCompany else "<a href="/examples/about-person-two-session">change</a> }}    
+                {% if isIndividual %}
+                   <a href="/examples/about-person-two-session">change</a> 
+                {% else %}
+                      <a href="/examples/about-company-two-session">change</a>
+                {% endif %}
               </td>
           </tr>
 
@@ -81,7 +88,11 @@
               <td>{{ dateDday }}{{ dateMonth }}{{ dateYear }}</td>
               <td>
                 <!-- Change the change link depending on whether an company or individual -->
-                {{ "<a href="/examples/about-company-two-session">change</a>" if isCompany else "<a href="/examples/about-person-two-session">change</a> }}    
+                {% if isIndividual %}
+                   <a href="/examples/about-person-two-session">change</a> 
+                {% else %}
+                      <a href="/examples/about-company-two-session">change</a>
+                {% endif %}
               </td>
           </tr>
           
