@@ -183,7 +183,7 @@ NodeExpressGenerator.prototype.assets = function assets() {
 
   console.log("copying the assets/sass/elements content files...");   
   this.copy('assets/sass/elements/_base.scss', 'app/assets/sass/elements/_base.scss');
-  this.copy('assets/sass/elements/_breadcrumb.scss', 'app/assets/sass/elements/_breadcrumb.scss');
+  this.copy('assets/sass/elements/_breadcrumbs.scss', 'app/assets/sass/elements/_breadcrumbs.scss');
   this.copy('assets/sass/elements/_buttons.scss', 'app/assets/sass/elements/_buttons.scss');
   this.copy('assets/sass/elements/_components.scss', 'app/assets/sass/elements/_components.scss'); 
   this.copy('assets/sass/elements/_details.scss', 'app/assets/sass/elements/_details.scss');
