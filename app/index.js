@@ -129,7 +129,7 @@ NodeExpressGenerator.prototype.lib = function lib() {
   console.log("Scaffolding the lib folder...");  
   console.log("Creating the lib folder and copying its content files...");  
 
-  this.mkdir('lib'); govuk_template.html
+  this.mkdir('lib');
   // root lib folder
   this.copy('lib/govuk_template.html', 'lib/govuk_template.html');
   this.copy('lib/govuk_template_unbranded.html', 'lib/govuk_template_unbranded.html');
