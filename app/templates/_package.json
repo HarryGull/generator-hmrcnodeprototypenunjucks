@@ -6,15 +6,9 @@
   "engines": {
     "node": "4.x"
   },
-  "scripts": {
-      "start": "node start.js",
-      "install": "napa"
-       <%
-	  if (RunOnComplete == true) {%>
-	    ,
-	     "postinstall": "node start.js"   	
-	      <%
-	} %>
+    "scripts": {
+    "start": "node start.js",
+    "install": "napa"
    },
   "dependencies": {
     "basic-auth": "^1.0.3",
